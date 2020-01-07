@@ -1,0 +1,7 @@
+apiVersion: v1
+appVersion: "1.0"
+description: A Helm chart for Kubernetes. This starts a pod with container, running a Spring boot Web server fetching
+  details from github for mahendrabagul
+name: mahendrabagul-helm-chart
+version: 0.1.0
+icon: https://avatars2.githubusercontent.com/u/6149190?s=460&v=4

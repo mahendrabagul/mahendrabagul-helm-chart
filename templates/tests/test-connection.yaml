@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "mahendrabagul-helm-chart.fullname" . }}-test-connection"
+  labels:
+{{ include "mahendrabagul-helm-chart.labels" . | indent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['{{ include "mahendrabagul-helm-chart.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
