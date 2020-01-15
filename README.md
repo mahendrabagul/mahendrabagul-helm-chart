@@ -5,8 +5,7 @@ Helm chart customized to use mahendrabagul/mahendrabagul-github-client docker im
 helm install https://github.com/mahendrabagul/mahendrabagul-helm-chart/releases/download/0.1.0/mahendrabagul-helm-chart-0.1.0.tgz --set service.type=NodePort
 
 ### Helm 3
-
-helm install mahendrachart https://github.com/mahendrabagul/mahendrabagul-helm-chart/releases/download/0.1.0/mahendrabagul-helm-chart-0.1.0.tgz --set service.type=NodePort
+helm install mahendrabagul-helm-chart https://github.com/mahendrabagul/mahendrabagul-helm-chart/releases/download/0.1.0/mahendrabagul-helm-chart-0.1.0.tgz --set service.type=NodePort
 
 NOTES:
 1. Get the application URL by running these commands:
